@@ -1,0 +1,37 @@
+/* Conteúdo curricular ampliado */
+.specialist { min-height: 700px; }
+.specialist-copy > p:not(.signature) { margin: 1.2rem 0; }
+.facts div { padding: .76rem 0; }
+.facts dd { font-size: .88rem; }
+
+.profile-highlights { margin-top: 1.5rem; }
+.profile-highlights > p {
+  color: var(--sand) !important;
+  font-size: .62rem !important;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  margin-bottom: .65rem !important;
+}
+.profile-highlights div { display: flex; flex-wrap: wrap; gap: .42rem; }
+.profile-highlights span {
+  color: #f6eadb;
+  border: 1px solid rgba(255, 255, 255, .28);
+  font-size: .61rem;
+  line-height: 1.35;
+  padding: .4rem .55rem;
+}
+.specialist blockquote {
+  border-left: 2px solid var(--sand);
+  color: #fff5e9;
+  font: italic 1.08rem/1.45 var(--serif);
+  margin: 1.7rem 0 0;
+  padding-left: 1rem;
+}
+.signature { margin-top: 1.5rem; }
+
+@media (max-width: 650px) {
+  .specialist { min-height: 0; }
+  .profile-highlights span { font-size: .58rem; }
+  .specialist blockquote { font-size: 1rem; }
+}
