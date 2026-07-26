@@ -62,7 +62,7 @@ body {
   box-shadow: 8px 10px 0 rgba(238,188,156,.5);
   text-align: left;
 }
-.portrait-credentials span { display: block; margin-bottom: .38rem; color: var(--brown); font: 700 .52rem/1.25 var(--sans); letter-spacing: .1em; text-transform: uppercase; }
+.portrait-credentials span { display: block; margin-bottom: .38rem; color: var(--brown); font: 700 .64rem/1.25 var(--sans); letter-spacing: .03em; }
 .portrait-credentials strong { display: block; color: var(--ink); font: 600 .73rem/1.55 var(--sans); }
 .sun-shape {
   background: var(--peach);
