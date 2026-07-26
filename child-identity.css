@@ -176,8 +176,8 @@ body {
 .path li:nth-child(5) > span::before { content: "♡"; color: var(--peach); }
 .path li:nth-child(6) > span::before { content: "↗"; color: var(--blue); }
 .path li::after { display: none !important; content: none !important; }
-.path li h3 { margin: 0 0 .45rem; color: var(--ink); font: 600 1.08rem/1.15 var(--serif); }
-.path li p { margin: 0; color: #725a43; font-size: .68rem; line-height: 1.55; }
+.path li h3 { margin: 0 0 .5rem; color: var(--ink); font: 600 1.25rem/1.15 var(--serif); }
+.path li p { margin: 0; color: #725a43; font-size: .76rem; line-height: 1.58; }
 .appointment { background: linear-gradient(112deg, rgba(238,188,156,.54), var(--cream) 48%, rgba(140,190,198,.30)); }
 .family-journey {
   box-sizing: border-box;
@@ -248,7 +248,7 @@ footer { border-top: 5px solid var(--blue); }
   .path li, .path li:nth-child(even) { min-height: 0; padding: 1.1rem 3.6rem 1.1rem .95rem; transform: none; }
   .path-route { display: none; }
   .path li > span { width: 37px; height: 37px; font-size: .85rem; }
-  .path li h3 { font-size: 1.16rem; }.path li p { font-size: .73rem; }
+  .path li h3 { font-size: 1.24rem; }.path li p { font-size: .78rem; }
   .specialist-image { border-right: 0; border-bottom: 8px solid var(--peach); }
   .specialist-image::after { width: 58px; height: 58px; }
   .family-journey { width: min(100%, 25.5rem); padding: 2rem 1.45rem 1.55rem; box-shadow: 12px 14px 0 rgba(238,188,156,.72); }
