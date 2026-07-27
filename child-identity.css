@@ -30,8 +30,9 @@ body {
   width: 1650px;
   height: 690px;
   background: url("https://drive.google.com/thumbnail?id=1YgbfAk3J14RXqV2RmL58-QfMu4p0Vud9&sz=w4000") center top / 1650px auto no-repeat;
-  opacity: .21;
-  transform: none;
+  opacity: .18;
+  filter: blur(7px);
+  transform: scale(1.025);
   pointer-events: none;
 }
 .hero-copy, .hero-portrait { position: relative; z-index: 1; }
