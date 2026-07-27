@@ -164,13 +164,10 @@ body {
 .path ol { position: relative; z-index: 1; isolation: isolate; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 3.5rem 4rem; margin: 3.25rem 0 0; padding: 2.6rem; overflow: hidden; list-style: none; border: 6px solid rgba(255,252,237,.82); border-radius: 34px 8px 34px 8px; background: rgba(255,253,245,.76); box-shadow: 16px 18px 0 rgba(238,188,156,.46); }
 .path ol::before { display: none; }
 .path ol::after { content: ""; position: absolute; z-index: -1; width: 240px; height: 240px; top: -135px; right: -75px; border-radius: 50%; background: rgba(197,195,129,.26); box-shadow: -810px 275px 0 rgba(140,190,198,.16); }
-.path li { position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center; gap: .55rem; min-height: 190px; margin: 0; padding: 1.25rem 4.4rem 1.25rem 1rem; text-align: center; border: 1px solid rgba(126,85,47,.12); border-radius: 18px 4px 18px 4px; background: rgba(255,253,245,.96); box-shadow: 6px 8px 0 rgba(92,63,35,.06); }
+.path li { position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center; gap: .55rem; min-height: 190px; margin: 0; padding: 1.25rem; text-align: center; border: 1px solid rgba(126,85,47,.12); border-radius: 18px 4px 18px 4px; background: rgba(255,253,245,.96); box-shadow: 6px 8px 0 rgba(92,63,35,.06); }
 .path li:nth-child(even) { transform: translateY(24px); }
 .path li:not(:last-child)::after { display: none; }
-.path li > span { position: absolute; top: 1rem; right: 1rem; display: grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 0; background: transparent; box-shadow: none; color: var(--sage); }
-.path li > span::before { display: none; }
-.path li > span svg { width: 34px; height: 34px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.path li:nth-child(2) > span { color: var(--blue); }.path li:nth-child(3) > span { color: var(--sage); }.path li:nth-child(4) > span { color: var(--sand); }.path li:nth-child(5) > span { color: var(--peach); }.path li:nth-child(6) > span { color: var(--blue); }
+.path li > span { display: none; }
 .path li::after { display: none !important; content: none !important; }
 .path li h3 { margin: 0 0 .5rem; color: var(--ink); font: 600 1.25rem/1.15 var(--serif); }
 .path li p { margin: 0; color: #725a43; font-size: .76rem; line-height: 1.58; }
