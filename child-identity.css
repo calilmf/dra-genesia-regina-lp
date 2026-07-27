@@ -167,7 +167,15 @@ body {
 .path li { position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center; gap: .55rem; min-height: 190px; margin: 0; padding: 1.25rem; text-align: center; border: 1px solid rgba(126,85,47,.12); border-radius: 18px 4px 18px 4px; background: rgba(255,253,245,.96); box-shadow: 6px 8px 0 rgba(92,63,35,.06); }
 .path li:nth-child(even) { transform: translateY(24px); }
 .path li:not(:last-child)::after { display: none; }
-.path li > span { display: none; }
+.path li > span { position: absolute; top: 1rem; right: 1rem; display: grid; place-items: center; width: 44px; height: 44px; }
+.path li > span svg { display: none; }
+.path li > span::before { content: ""; width: 36px; height: 36px; display: block; background: center / contain no-repeat; }
+.path li:nth-child(1) > span::before { background-image: url("https://api.iconify.design/lucide/messages-square.svg?color=%2390a570"); }
+.path li:nth-child(2) > span::before { background-image: url("https://api.iconify.design/lucide/ear.svg?color=%238cbec6"); }
+.path li:nth-child(3) > span::before { background-image: url("https://api.iconify.design/lucide/search-check.svg?color=%2390a570"); }
+.path li:nth-child(4) > span::before { background-image: url("https://api.iconify.design/lucide/clipboard-list.svg?color=%23c6a971"); }
+.path li:nth-child(5) > span::before { background-image: url("https://api.iconify.design/lucide/hand-heart.svg?color=%23eebc9c"); }
+.path li:nth-child(6) > span::before { background-image: url("https://api.iconify.design/lucide/calendar-check.svg?color=%238cbec6"); }
 .path li::after { display: none !important; content: none !important; }
 .path li h3 { margin: 0 0 .5rem; color: var(--ink); font: 600 1.25rem/1.15 var(--serif); }
 .path li p { margin: 0; color: #725a43; font-size: .76rem; line-height: 1.58; }
