@@ -167,7 +167,7 @@ body {
 .path li { position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center; gap: .55rem; min-height: 190px; margin: 0; padding: 1.25rem; text-align: center; border: 1px solid rgba(126,85,47,.12); border-radius: 18px 4px 18px 4px; background: rgba(255,253,245,.96); box-shadow: 6px 8px 0 rgba(92,63,35,.06); }
 .path li:nth-child(even) { transform: translateY(24px); }
 .path li:not(:last-child)::after { display: none; }
-.path li > span { position: absolute; top: 1rem; right: 1rem; display: grid; place-items: center; width: 44px; height: 44px; }
+.path li > span { position: absolute; top: 1rem; right: 1rem; display: grid; place-items: center; width: 44px; height: 44px; background: none !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
 .path li > span::before { display: none; }
 .path li > span svg { display: block; width: 36px; height: 36px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .path li::after { display: none !important; content: none !important; }
