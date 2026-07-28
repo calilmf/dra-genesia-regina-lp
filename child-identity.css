@@ -36,6 +36,12 @@ body {
   pointer-events: none;
 }
 .hero-copy, .hero-portrait { position: relative; z-index: 1; }
+
+/* Evita trabalho de pintura fora da área visível, sem mudar o layout percebido. */
+.difference-map, .care, .consultation-reasons, .specialist, .path, .appointment, footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 760px;
+}
 .hero::after {
   display: none;
 }
@@ -217,7 +223,7 @@ body {
 footer { border-top: 5px solid var(--blue); }
 
 @media (max-width: 650px) {
-  .hero::before { top: auto; bottom: 18px; left: -115px; width: 620px; height: 350px; background-size: 620px auto; opacity: .18; transform: none; }
+  .hero::before { top: auto; bottom: 18px; left: -115px; width: 620px; height: 350px; background-image: url("https://drive.google.com/thumbnail?id=1YgbfAk3J14RXqV2RmL58-QfMu4p0Vud9&sz=w1400"); background-size: 620px auto; opacity: .18; transform: none; }
   .hero-portrait { height: 450px; align-items: flex-start; }
   .portrait-credentials { top: 350px; right: 0; width: 154px; padding: .68rem .72rem; box-shadow: 6px 8px 0 rgba(238,188,156,.5); }
   .portrait-credentials span { font-size: .46rem; }.portrait-credentials strong { font-size: .62rem; line-height: 1.52; }
