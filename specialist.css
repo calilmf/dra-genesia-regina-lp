@@ -1,5 +1,5 @@
 /* Conteúdo curricular ampliado */
-.specialist { min-height: 700px; }
+.specialist { min-height: 0; }
 .specialist-copy > p:not(.signature) { margin: 1.2rem 0; }
 .facts div { padding: .76rem 0; }
 .facts dd { font-size: .88rem; }
@@ -29,6 +29,18 @@
   padding-left: 1rem;
 }
 .signature { margin-top: 1.5rem; }
+
+@media (min-width: 901px) {
+  .specialist-copy {
+    padding: clamp(3.25rem, 4.5vw, 5rem) clamp(3rem, 5vw, 6rem);
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.4rem;
+    margin-top: 1.2rem;
+  }
+}
 
 @media (max-width: 650px) {
   .specialist { min-height: 0; }
