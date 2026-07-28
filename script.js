@@ -33,6 +33,7 @@ if (!reduceMotion && "IntersectionObserver" in window) {
 }
 
 if (new URLSearchParams(window.location.search).get("versao") === "completa") {
+  document.documentElement.classList.add("copy-completa");
   document.title = "Ortopedista Pediátrica em Brasília | Dra. Genésia Regina — Versão completa";
 
   const replaceText = (selector, values) => {

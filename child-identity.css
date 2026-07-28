@@ -313,3 +313,15 @@ footer { border-top: 5px solid var(--blue); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* Rodapé compacto na versão para campanhas; contato apenas na versão completa. */
+.footer-contact { display: none; }
+footer { grid-template-columns: 1.2fr 1fr; }
+.copy-completa .footer-contact { display: block; }
+.copy-completa footer { grid-template-columns: 1.2fr .85fr 1fr; }
+.footer-contact a { display: flex; align-items: center; gap: .5rem; }
+.footer-contact svg { width: 15px; height: 15px; flex: 0 0 auto; fill: none; stroke: var(--sand); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+@media (max-width: 650px) {
+  footer, .copy-completa footer { grid-template-columns: 1fr; }
+}
