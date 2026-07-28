@@ -59,7 +59,8 @@ body {
 .portrait-credentials {
   position: absolute;
   z-index: 4;
-  top: 74px;
+  top: auto;
+  bottom: 28px;
   right: 0;
   width: 178px;
   padding: .8rem .9rem .85rem;
@@ -233,7 +234,7 @@ footer { border-top: 5px solid var(--blue); }
 @media (max-width: 650px) {
   .hero::before { top: auto; bottom: 18px; left: -115px; width: 620px; height: 350px; background-image: url("https://drive.google.com/thumbnail?id=1YgbfAk3J14RXqV2RmL58-QfMu4p0Vud9&sz=w1400"); background-size: 620px auto; opacity: .18; transform: none; }
   .hero-portrait { height: 450px; align-items: flex-start; }
-  .portrait-credentials { top: 350px; right: 0; width: 154px; padding: .68rem .72rem; box-shadow: 6px 8px 0 rgba(238,188,156,.5); }
+  .portrait-credentials { top: auto; bottom: 18px; right: 0; width: 154px; padding: .68rem .72rem; box-shadow: 6px 8px 0 rgba(238,188,156,.5); }
   .portrait-credentials span { font-size: .46rem; }.portrait-credentials strong { font-size: .62rem; line-height: 1.52; }
   .portrait-note { left: 0; right: auto; bottom: 0; max-width: 160px; }
   .care-card:nth-child(2), .care-card:nth-child(3) { transform: none; }
