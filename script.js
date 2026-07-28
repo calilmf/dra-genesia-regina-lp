@@ -8,7 +8,7 @@ document.querySelectorAll("[data-whatsapp]").forEach((link) => {
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const revealItems = document.querySelectorAll(
-  ".hero-copy, .hero-portrait, .difference-map-intro, .map-stop, .section-intro, .care-story, .care-card, .reasons-intro, .reason-card, .specialist-image, .specialist-copy, .path-heading, .path li, .appointment-illustration, .appointment-copy, footer > div"
+  ".hero-copy, .hero-portrait, .difference-map-intro, .map-stop, .section-intro, .care-story, .care-card, .reasons-intro, .reason-card, .path-heading, .path li, .appointment-illustration, .appointment-copy, footer > div"
 );
 
 if (!reduceMotion && "IntersectionObserver" in window) {
