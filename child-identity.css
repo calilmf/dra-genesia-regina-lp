@@ -221,6 +221,11 @@ body {
   position: absolute; right: 0; top: -2.7rem;
 }
 footer { border-top: 5px solid var(--blue); }
+.footer-brand img {
+  mix-blend-mode: normal;
+  filter: brightness(0) invert(1);
+  opacity: .96;
+}
 
 @media (max-width: 650px) {
   .hero::before { top: auto; bottom: 18px; left: -115px; width: 620px; height: 350px; background-image: url("https://drive.google.com/thumbnail?id=1YgbfAk3J14RXqV2RmL58-QfMu4p0Vud9&sz=w1400"); background-size: 620px auto; opacity: .18; transform: none; }
