@@ -31,6 +31,13 @@
 .signature { margin-top: 1.5rem; }
 
 @media (min-width: 901px) {
+  .specialist {
+    width: min(100% - 5rem, 1320px);
+    margin: 5.5rem auto;
+    overflow: hidden;
+    border-radius: 34px 8px 34px 8px;
+    grid-template-columns: minmax(410px, .82fr) minmax(0, 1fr);
+  }
   .specialist-copy {
     padding: clamp(3.25rem, 4.5vw, 5rem) clamp(3rem, 5vw, 6rem);
   }
