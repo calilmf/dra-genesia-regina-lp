@@ -48,6 +48,15 @@ body {
 .eyebrow { color: var(--brown); }
 .eyebrow span { width: 28px; height: 4px; border-radius: 5px; background: var(--peach); }
 .hero h1 em { color: var(--sage); }
+
+@media (min-width: 901px) {
+  .hero {
+    grid-template-columns: minmax(0, 1.2fr) minmax(380px, .8fr);
+    gap: clamp(2.5rem, 4vw, 5rem);
+  }
+  .hero h1 { font-size: clamp(2.7rem, 4vw, 4.55rem); }
+}
+
 .hero-portrait > img {
   border: 9px solid rgba(255,252,237,.9);
   border-radius: 42% 58% 46% 54% / 45% 43% 57% 55%;

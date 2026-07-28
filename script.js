@@ -46,7 +46,7 @@ if (new URLSearchParams(window.location.search).get("versao") === "completa") {
     if (element) element.innerHTML = value;
   };
 
-  replaceHtml(".hero h1", "Para cada passo do crescimento,<br><em>uma decisão em família.</em>");
+  replaceHtml(".hero h1", "Para cada passo do crescimento, <em>uma decisão em família.</em>");
   replaceText(".hero-text", ["Avaliação ortopédica especializada para crianças e adolescentes, com escuta ativa, explicações claras e escolhas feitas junto de quem cuida."]);
   replaceHtml("#difference-map-title", "Um caminho de cuidado<br><em>feito para a sua família.</em>");
   replaceText(".difference-map-intro > p:not(.eyebrow)", ["Cada ponto do percurso representa uma forma de tornar o cuidado mais acessível, claro e próximo."]);
