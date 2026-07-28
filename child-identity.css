@@ -118,7 +118,10 @@ body {
 .care-card:nth-child(2) { transform: translateY(16px); }
 .care-card:nth-child(3) { transform: translateY(5px); }
 .card-symbol { display: none; }
+.care-card { min-height: 218px; padding: 1.45rem 1.5rem; }
+.care-card h3 { margin-top: 1.8rem; margin-bottom: .5rem; font-size: 1.45rem; }
 .care-icon { position: absolute; right: 1.4rem; top: 2.1rem; height: 48px; width: 48px; }
+.care-icon-image { width: 54px; height: 54px; object-fit: contain; }
 .care-icon i { position: absolute; display: block; }
 .icon-steps i { height: 17px; width: 12px; border-radius: 60% 40% 55% 45%; background: var(--brown); transform: rotate(30deg); }
 .icon-steps i:nth-child(1) { left: 1px; top: 23px; opacity: .5; }.icon-steps i:nth-child(2) { left: 17px; top: 11px; opacity: .7; }.icon-steps i:nth-child(3) { left: 34px; top: 0; }
@@ -234,6 +237,9 @@ footer { border-top: 5px solid var(--blue); }
   .portrait-credentials span { font-size: .46rem; }.portrait-credentials strong { font-size: .62rem; line-height: 1.52; }
   .portrait-note { left: 0; right: auto; bottom: 0; max-width: 160px; }
   .care-card:nth-child(2), .care-card:nth-child(3) { transform: none; }
+  .care-card { min-height: 192px; padding: 1.3rem; }
+  .care-card h3 { margin-top: 1.55rem; font-size: 1.38rem; }
+  .care-icon-image { width: 46px; height: 46px; top: 1.35rem; right: 1.2rem; }
   .difference-map { padding-top: 5.4rem; padding-bottom: 5.6rem; }
   .difference-map-intro { display: block; }
   .difference-map-intro > p:not(.eyebrow) { margin-top: 1.3rem; font-size: .8rem; }
